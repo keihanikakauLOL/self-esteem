@@ -3,6 +3,21 @@ using namespace std;
 
 //Write the function printO() here
 
+void printO(int n, int p) {
+
+	if (n <= 0 || p <= 0) {
+		cout << "Invalid input";
+	}
+	else {
+		for (int i = 0 ; i < n; i++) {
+			for (int j = 0; j < p; j++) {
+				cout << "O";
+			}
+			cout << "\n";
+		}
+	}
+}
+
 int main(){
 	
 	printO(2,2);
@@ -18,7 +33,7 @@ int main(){
 	cout << "\n";	
 	
 	printO(7,-1);
-	cout << "\n";	
+	cout << "\n";
 	
 	return 0;
 }
